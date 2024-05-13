@@ -30,7 +30,11 @@ tbody .btn {
 
 
 @media screen and (max-width: 768px) {
-    .container {
+    /* .container {
         width: max-content !important;
+    } */
+    .table-container{
+    overflow-x: scroll;
+
     }
 }
