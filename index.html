@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <title>CRUD System</title>
+</head>
+
+<body>
+
+    <div class="container p-5 m-auto bgForm text-white">
+        <div class="inputs m-auto">
+            <h1 class="text-center my-3 fw-medium">Data Entry App</h1>
+            <label for="productName"> Name</label>
+            <input type="text" class="form-control" id="productName">
+            <div class="alert alert-danger py-2 d-none" id="alertName">You must enter an uppercase letter and at least
+                two lowercase letters</div>
+            <label for="productPrice">Product Price</label>
+            <input type="number" class="form-control" id="productPrice">
+            <div class="alert alert-danger py-2 d-none" id="alertPrice">You must enter a price</div>
+            <label for="productCategory">Product Category</label>
+            <input type="text" class="form-control" id="productCategory">
+            <div class="alert alert-danger py-2 d-none" id="alertCategory">You must enter a two letters</div>
+            <label for="productDescription">Product Description</label>
+            <textarea type="text" class="form-control" id="productDescription"></textarea>
+            <button class="btn btn-success my-5 float-end" id="addProduct">Add Product</button>
+            <div class="clearfix"></div>
+
+            <input type="text" placeholder="Search by name.." class="form-control mb-5"
+                onkeyup="searchData(this.value)">
+
+        </div>
+
+        <table class="table table-striped text-center align-middle">
+            <thead>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Category</th>
+                <th>Description</th>
+                <th>Action</th>
+            </thead>
+            <tbody id="bodyData">
+
+            </tbody>
+        </table>
+
+        <hr>
+        <span class="text-secondary fw-bold">&copy; 2019 Bookmarker inc.</span>
+    </div>
+
+
+
+
+
+
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>
