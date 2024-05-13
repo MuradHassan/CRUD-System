@@ -31,7 +31,6 @@ tbody .btn {
 
 @media screen and (max-width: 768px) {
     .container {
-        padding-left: 10px !important;
-        padding-right: 10px !important;
+        width: max-content !important;
     }
 }
